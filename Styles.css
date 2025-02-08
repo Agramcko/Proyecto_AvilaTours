@@ -1,86 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-:root{
-    --main-color:#FD8103;
+:root {
+    --main-color: #FD8103;
     --black: #13131a;
-    --bg: #ffffff;
+    --bg: #E9E9E8;
     --border: .1rem solid rgba(0, 0, 0, 0.3);
 }
 
-*{
+* {
     font-family: "Roboto", serif;
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear; 
+    transition: .2s linear;
 }
 
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
-    width: .8rem; 
+html::-webkit-scrollbar {
+    width: .8rem;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background: #ffffff;
-    border-radius: 5rem ;
+    border-radius: 5rem;
 }
 
-body{
+body {
     background: var(--bg);
 }
 
-.header{
+.bnt{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #ffffff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem,;
+}
+
+.header {
     background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1.5rem 7%;
+    padding: 1.5rem 7%;
     border-bottom: var(--border);
     position: fixed;
-    top: 0; left: 0; right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     background-color: #FD8103;
 
 }
 
-.header .imagenlogo{
+.header .imagenlogo {
     height: 9rem;
 }
 
-.header .navbar a{
-    margin:0 1rem;
+.header .navbar a {
+    margin: 0 1rem;
     font-size: 1.9rem;
     color: white;
 }
 
-.header .navbar a:hover{
+.header .navbar a:hover {
     color: #353535;
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
 
-.header .icons div{
+.header .icons div {
     color: #000000;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
 
-.header .icons div:hover{
-  color: white;
+.header .icons div:hover {
+    color: white;
+}
+
+#menu-bnt{
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #ffffff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover{
+    color: #FD8103;
+}
+
+.header .placeholder{
+    background: #353535;
+}
+
+@media (max-width:991px){
+
+    html {
+        font-size: 55%;
+    }
+    
+    .header{
+        padding:1.5rem 2rem;
+    }
+}
+
+@media (max-width:991px){
+    
+    #menu-bnt{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%;  right: -100%;
+        background: #000000;
+        width: 30rem;
+        height:  calc(100vh - 9.5rem);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+
+    }
+
 }
 
