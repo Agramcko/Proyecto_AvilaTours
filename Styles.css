@@ -99,7 +99,7 @@ body {
 }
 
 .header .icons div:hover {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #menu-bnt{
