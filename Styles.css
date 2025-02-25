@@ -45,6 +45,10 @@ body {
     background: var(--bg);
 }
 
+section{
+    padding: 2rem 7%;
+}
+
 .bnt{
     margin-top: 1rem;
     display: inline-block;
@@ -102,7 +106,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#menu-bnt{
+#menu-btn{
     display: none;
 }
 
@@ -148,6 +152,39 @@ body {
     background: #353535;
 }
 
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center ;
+    background: url(Imagenes/Jardin.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.home .contenido{
+    max-width: 60rem;
+}
+
+.home .contenido h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white; 
+}
+
+.home .contenido p{
+    font-size: 2rem;
+    font-weight: lighter; 
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #ffffff ;
+
+}
+
+
+
+
 @media(max-width:991px){
 
     html {
@@ -157,11 +194,15 @@ body {
     .header{
         padding:1.5rem 2rem;
     }
+
+    section{
+        padding: 2rem;
+    }
 }
 
 @media (max-width:768px){
     
-    #menu-bnt{
+    #menu-btn{
         display: inline-block;
     }
 
@@ -178,6 +219,7 @@ body {
     }
 
     .header .navbar a{
+        color:var(--bg);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
@@ -189,6 +231,10 @@ body {
         right: 2rem;
     }
 
+    .home{
+        background-position: left;
+    }
+
 }
 
 @media (max-width:450px){
@@ -198,6 +244,4 @@ body {
     }
     
 }
-
-
 
