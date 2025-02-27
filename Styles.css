@@ -157,7 +157,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center ;
-    background: url(Imagenes/Jardin.jpg) no-repeat;
+    background: url(Imagenes/CAMPUS-2024-1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -217,7 +217,88 @@ section{
 }
 
 .cuadrado{
-    background: rgba(155, 151, 149, 0.15);;
+    background: rgba(155, 151, 149, 0.15);
+}
+
+.mision .mvo{
+    display: flex;
+    align-items: center;
+    background: var(--main-color);
+    flex-wrap: wrap;
+    border-radius: 50px;
+    gap: 2rem;
+  
+}
+
+.mision .cabeza{
+    padding: 4rem;
+}
+
+.mision .mvo .imagen{
+    flex: 1 1 45rem;
+}
+
+.mision .mvo .imagen .contenido{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+
+.mision .mvo .imagen img{
+    border-top-left-radius:50px;
+    border-bottom-left-radius: 50px;
+    width: 100%;
+}
+
+.mision .mvo .contenido h3{
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.mision .mvo .contenido p{
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.vision{
+    min-height: 45vh;
+    display: flex;
+    align-items: center ;
+    background: url(Imagenes/panorama.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.vision .contenido{
+    max-width: 70rem;
+    min-height: 245px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.00);
+    background: rgba(217, 217, 217, 0.03);
+    box-shadow: 0px 45px 50px 0px rgba(0, 0, 0, 0.25), 43.6px -43.6px 43.6px 0px rgba(165, 165, 165, 0.10) inset, -43.6px 43.6px 43.6px 0px rgba(255, 255, 255, 0.10) inset;
+    backdrop-filter: blur(43.599998474121094px);
+}
+
+.vision .contenido h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white; 
+    margin-left: 20px;
+}
+
+.vision .contenido p{
+    font-size: 2rem;
+    font-weight: lighter; 
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #ffffff ;
+    margin-left: 20px;
 }
 
 @media(max-width:991px){
@@ -283,6 +364,20 @@ section{
     .home .contenido p{
         font-size: 1.5rem;
      }
+
+    .vision{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .vision .contenido h3{
+        font-size: 4.5rem;
+    }
+
+    .vision .contenido p{
+        font-size: 1.5rem;
+    }
 
 }
 
