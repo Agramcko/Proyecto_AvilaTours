@@ -225,7 +225,7 @@ section{
     align-items: center;
     background: var(--main-color);
     flex-wrap: wrap;
-    border-radius: 50px;
+    border-radius: 25px;
     gap: 2rem;
   
 }
@@ -245,8 +245,8 @@ section{
 
 
 .mision .mvo .imagen img{
-    border-top-left-radius:50px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius: 30px;
     width: 100%;
 }
 
@@ -260,6 +260,7 @@ section{
     color: #ffffff;
     padding: 1rem 0;
     line-height: 1.8;
+    text-transform: uppercase;
 }
 
 .vision{
@@ -300,6 +301,50 @@ section{
     color: #ffffff ;
     margin-left: 20px;
 }
+
+.objetivo .mvo{
+    display: flex;
+    align-items: center;
+    background: var(--main-color);
+    flex-wrap: wrap;
+    border-radius: 25px;
+    gap: 2rem;
+  
+}
+
+.objetivo .cabeza{
+    padding: 4rem;
+}
+
+.objetivo .mvo .imagen{
+    flex: 1 1 45rem;
+}
+
+.objetivo .mvo .imagen .contenido{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+
+.objetivo .mvo .imagen img{
+    border-top-left-radius:30px;
+    border-bottom-left-radius: 30px;
+    width: 100%;
+}
+
+.objetivo .mvo .contenido h3{
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.objetivo .mvo .contenido p{
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
 
 @media(max-width:991px){
 
